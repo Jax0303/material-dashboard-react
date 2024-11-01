@@ -1,3 +1,4 @@
+/*App.js*/
 /**
 =========================================================
 * Material Dashboard 2 React - v2.2.0
@@ -12,11 +13,15 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard'; // 대시보드 페이지 컴포넌트
+import CreateContract from './pages/CreateContract'; // 계약 생성 페이지 컴포넌트
+import ManageContracts from './pages/ManageContracts'; // 계약 관리 페이지 컴포넌트
 
 import { useState, useEffect, useMemo } from "react";
 
 // react-router components
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
